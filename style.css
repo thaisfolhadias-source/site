@@ -1,0 +1,354 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292522;
+    background-color: #fffaf5;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.cabecalho {
+    background-color: #241f1c;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    color: #ffffff;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #e9a66c;
+}
+
+
+/* =========================================
+   SEÇÃO PRINCIPAL
+========================================= */
+
+.hero {
+    background: linear-gradient(135deg, #f7e5d3, #fffaf5);
+    padding: 90px 0;
+}
+
+.hero-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.destaque,
+.subtitulo {
+    color: #a95735;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3.4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #292522;
+}
+
+.hero p:not(.destaque) {
+    font-size: 1.1rem;
+    color: #625b56;
+    margin-bottom: 30px;
+}
+
+.imagem-principal img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 20px 45px rgba(36, 31, 28, 0.18);
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.botao {
+    display: inline-block;
+    background-color: #a95735;
+    color: #ffffff;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #7f3e27;
+    transform: translateY(-2px);
+}
+
+.botao-claro {
+    background-color: #ffffff;
+    color: #8d452d;
+}
+
+.botao-claro:hover {
+    background-color: #f4e3d5;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.secao {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.secao h2,
+.secao-clara h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.texto-central {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    color: #625b56;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================
+   CARTÕES
+========================================= */
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cartao {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(50, 40, 30, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(50, 40, 30, 0.13);
+}
+
+.icone {
+    display: block;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cartao h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.cartao p {
+    color: #6c6560;
+}
+
+
+/* =========================================
+   TÉCNICAS
+========================================= */
+
+.secao-clara {
+    background-color: #f3e8dc;
+}
+
+.tecnicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.tecnica {
+    background-color: #fffaf5;
+    padding: 30px;
+    text-align: left;
+    border-left: 4px solid #a95735;
+}
+
+.tecnica h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.tecnica p {
+    color: #625b56;
+}
+
+
+/* =========================================
+   CONTATO / CHAMADA FINAL
+========================================= */
+
+.contato {
+    background-color: #a95735;
+    color: #ffffff;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.contato h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.rodape {
+    background-color: #241f1c;
+    color: #cfc7c2;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+.rodape p:first-child {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .cabecalho .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-conteudo {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero h2 {
+        font-size: 2.7rem;
+    }
+
+    .cartoes,
+    .tecnicas {
+        grid-template-columns: 1fr;
+    }
+
+    .secao {
+        padding: 65px 0;
+    }
+
+    .contato h2,
+    .secao h2,
+    .secao-clara h2 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .cabecalho h1 {
+        font-size: 1.4rem;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p:not(.destaque) {
+        font-size: 1rem;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+}
